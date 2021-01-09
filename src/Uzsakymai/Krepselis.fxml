@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Uzsakymai.KrepselisControl">
+   <children>
+      <TableView fx:id="Table" layoutX="-2.0" prefHeight="261.0" prefWidth="384.0">
+        <columns>
+          <TableColumn fx:id="Preke" prefWidth="255.0" text="Prekė" />
+            <TableColumn fx:id="Kaina" minWidth="0.0" prefWidth="49.0" text="Kaina" />
+        </columns>
+      </TableView>
+      <Button fx:id="uzsak" layoutX="139.0" layoutY="393.0" mnemonicParsing="false" onAction="#Uzsakyti" prefHeight="27.0" prefWidth="199.0" text="Užsakyti" />
+      <Button layoutX="29.0" layoutY="393.0" mnemonicParsing="false" onAction="#Istrinti" text="Ištrinti" />
+      <Label layoutX="174.0" layoutY="346.0" text="Bendra suma:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Suma" layoutX="275.0" layoutY="346.0" prefHeight="18.0" prefWidth="36.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="377.0" prefHeight="5.0" prefWidth="384.0" />
+      <Label layoutX="306.0" layoutY="347.0" prefHeight="17.0" prefWidth="22.0" text="Eur" />
+      <Label layoutX="174.0" layoutY="320.0" text="Prekių kiekis:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="kiekis" layoutX="275.0" layoutY="320.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="271.0" layoutY="260.0" orientation="VERTICAL" prefHeight="118.0" prefWidth="7.0" />
+      <Label layoutX="173.0" layoutY="295.0" text="Data:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="275.0" layoutY="295.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="270.0" text="Vardas:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="275.0" layoutY="270.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nr" disable="true" layoutX="12.0" layoutY="271.0" />
+   </children>
+</Pane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Anonimas.PagrindAnonimControl">
+   <children>
+      <Label layoutX="16.0" layoutY="25.0" text="Sveiki, atvykę į elektroninę parduotuvę" />
+      <Separator layoutX="250.0" layoutY="61.0" orientation="VERTICAL" prefHeight="315.0" prefWidth="6.0" />
+      <Separator layoutX="-43.0" layoutY="378.0" prefHeight="3.0" prefWidth="650.0" />
+      <Label fx:id="lPav" layoutX="255.0" layoutY="90.0" prefHeight="29.0" prefWidth="150.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="lApras" contentDisplay="CENTER" layoutX="255.0" layoutY="130.0" prefHeight="146.0" prefWidth="180.0" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ImageView fx:id="paveikslas" fitHeight="196.0" fitWidth="138.0" layoutX="434.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lKaina" alignment="CENTER" layoutX="310.0" layoutY="297.0" prefHeight="28.0" prefWidth="41.0" textAlignment="CENTER" textFill="#0ca80c">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <Button fx:id="Close" layoutX="260.0" layoutY="396.0" mnemonicParsing="false" onAction="#Close" text="Uždaryti" textFill="#0e940e" />
+      <Button layoutX="392.0" layoutY="20.0" mnemonicParsing="false" onAction="#Registruotis" text="Prisijungti / Prisiregistruoti" />
+      <TableView fx:id="table" layoutX="16.0" layoutY="65.0" prefHeight="259.0" prefWidth="216.0">
+        <columns>
+          <TableColumn fx:id="prekes" prefWidth="215.0" text="Prekės" />
+        </columns>
+      </TableView>
+      <Label fx:id="eur" layoutX="351.0" layoutY="300.0" prefHeight="23.0" prefWidth="33.0" textFill="#0ca80c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" layoutX="255.0" layoutY="300.0" prefHeight="22.0" prefWidth="54.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

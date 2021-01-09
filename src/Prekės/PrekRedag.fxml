@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prekės.PrekRedagControl">
+   <children>
+      <Label layoutX="512.0" layoutY="52.0" text="Prekių redagavimo platforma" />
+      <Button layoutX="196.0" layoutY="145.0" mnemonicParsing="false" onAction="#addKateg" text="Pridėti kategoriją" />
+      <Button layoutX="196.0" layoutY="221.0" mnemonicParsing="false" onAction="#minusKateg" text="Ištrinti kategoriją" />
+      <TableView fx:id="lentele2" layoutX="29.0" layoutY="107.0" prefHeight="142.0" prefWidth="167.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="29.0" text="ID" />
+          <TableColumn fx:id="pavadin" prefWidth="137.0" text="PAVADINIMAS" />
+        </columns>
+      </TableView>
+      <TextField fx:id="addTxt" layoutX="196.0" layoutY="107.0" />
+      <Button layoutX="196.0" layoutY="185.0" mnemonicParsing="false" onAction="#clear" prefHeight="27.0" prefWidth="121.0" text="Išvalyti" />
+      <TableView fx:id="lentel3" layoutX="116.0" layoutY="392.0" prefHeight="200.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="k_id" prefWidth="43.0" text="K.ID" />
+          <TableColumn fx:id="pav" prefWidth="158.0" text="PAVADINIMAS" />
+            <TableColumn fx:id="apras" prefWidth="270.0" text="APRAŠYMAS" />
+            <TableColumn fx:id="kain" prefWidth="74.0" text="KAINA" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtPav" layoutX="581.0" layoutY="107.0" />
+      <TextField fx:id="txtApras" layoutX="581.0" layoutY="158.0" />
+      <TextField fx:id="txtKaina" layoutX="581.0" layoutY="207.0" />
+      <Separator layoutX="385.0" layoutY="21.0" orientation="VERTICAL" prefHeight="351.0" prefWidth="7.0" />
+      <Label layoutX="454.0" layoutY="112.0" text="Pavadinimas" />
+      <Label layoutX="454.0" layoutY="164.0" text="Aprašymas" />
+      <Label layoutX="454.0" layoutY="213.0" text="Kaina" />
+      <Label layoutX="454.0" layoutY="253.0" text="Kategor. ID" />
+      <Button layoutX="413.0" layoutY="295.0" mnemonicParsing="false" onAction="#bPrideti" text="Pridėti" />
+      <Button layoutX="484.0" layoutY="295.0" mnemonicParsing="false" onAction="#bSalinti" text="Šalinti" />
+      <Button layoutX="560.0" layoutY="295.0" mnemonicParsing="false" onAction="#bKeisti" text="Keisti kategoriją" />
+      <Button layoutX="689.0" layoutY="295.0" mnemonicParsing="false" onAction="#bIsvalyti" text="Išvalyti" />
+      <Label layoutX="96.0" layoutY="52.0" text="Kategorijų redagavimo platforma" />
+      <Label fx:id="txtlab" layoutX="584.0" layoutY="253.0" prefHeight="17.0" prefWidth="34.0" text="1" />
+      <Button layoutX="318.0" layoutY="603.0" mnemonicParsing="false" onAction="#BackMenu" text="Grįžti" />
+      <Button layoutX="391.0" layoutY="603.0" mnemonicParsing="false" onAction="#close" text="Išsiregistruoti" />
+      <ImageView fx:id="nuotrauka" fitHeight="126.0" fitWidth="167.0" layoutX="29.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="195.0" layoutY="295.0" mnemonicParsing="false" onAction="#ieskoti" prefHeight="27.0" prefWidth="122.0" text="Įkelti" />
+      <Button layoutX="195.0" layoutY="330.0" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="122.0" text="Išsaugoti" />
+   </children>
+</Pane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administratorius.KomentRemoveControl">
+   <children>
+      <TableView fx:id="KomTable" layoutX="78.0" layoutY="192.0" prefHeight="200.0" prefWidth="447.0">
+        <columns>
+          <TableColumn fx:id="Preke" prefWidth="75.0" text="Prekė" />
+          <TableColumn fx:id="Vardas" prefWidth="75.0" text="Vardas" />
+            <TableColumn fx:id="Data" prefWidth="75.0" text="Data" />
+            <TableColumn fx:id="Komentaras" prefWidth="221.0" text="Komentaras" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TxtVardas" layoutX="78.0" layoutY="142.0" />
+      <Button layoutX="286.0" layoutY="142.0" mnemonicParsing="false" onAction="#Remove" text="Šalinti" />
+      <TextField fx:id="TxtPreke" layoutX="78.0" layoutY="83.0" />
+      <Label layoutX="198.0" layoutY="21.0" text="Vartotojų komentarų valdymo sistema" />
+      <Label layoutX="78.0" layoutY="66.0" text="Prekė:" />
+      <Label layoutX="78.0" layoutY="128.0" text="Vardas:" />
+      <Button layoutX="275.0" layoutY="407.0" mnemonicParsing="false" onAction="#Back" text="Grįžti" />
+      <Label fx:id="TxtId" layoutX="288.0" layoutY="83.0" prefHeight="27.0" prefWidth="47.0" />
+      <Label layoutX="267.0" layoutY="88.0" text="Id:" />
+   </children>
+</Pane>

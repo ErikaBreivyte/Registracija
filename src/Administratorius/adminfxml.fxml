@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administratorius.Adminfxml">
+   <children>
+      <TableView fx:id="lentele" layoutX="375.0" layoutY="96.0" prefHeight="303.0" prefWidth="390.0">
+        <columns>
+          <TableColumn fx:id="stVardas" prefWidth="75.0" text="Vardas" />
+          <TableColumn fx:id="stPavarde" prefWidth="75.0" text="Pavardė" />
+            <TableColumn fx:id="stNikas" prefWidth="75.0" text="V.vardas" />
+            <TableColumn fx:id="stPass" prefWidth="75.0" text="Slaptaž." />
+            <TableColumn fx:id="stMetai" prefWidth="75.0" text="Metai" />
+            <TableColumn fx:id="stMenesis" prefWidth="75.0" text="Mėnesis" />
+            <TableColumn fx:id="stDiena" prefWidth="75.0" text="Diena" />
+        </columns>
+      </TableView>
+      <Label layoutX="299.0" layoutY="30.0" text="NAUDOTOJŲ DUOMENYS" />
+      <TextField fx:id="adVardas" layoutX="135.0" layoutY="116.0" />
+      <TextField fx:id="adPavard" layoutX="135.0" layoutY="156.0" />
+      <TextField fx:id="adNikas" layoutX="135.0" layoutY="200.0" />
+      <TextField fx:id="adPass" layoutX="135.0" layoutY="242.0" />
+      <TextField fx:id="adMetai" layoutX="135.0" layoutY="291.0" prefHeight="27.0" prefWidth="65.0" />
+      <TextField fx:id="adMen" layoutX="209.0" layoutY="291.0" prefHeight="27.0" prefWidth="41.0" />
+      <TextField fx:id="adDien" layoutX="261.0" layoutY="291.0" prefHeight="27.0" prefWidth="41.0" />
+      <Label layoutX="20.0" layoutY="121.0" text="Vardas" />
+      <Label layoutX="20.0" layoutY="161.0" text="Pavardė" />
+      <Label layoutX="19.0" layoutY="205.0" text="Vartotojo vardas" />
+      <Label layoutX="20.0" layoutY="247.0" text="Slaptažodis" />
+      <Label layoutX="17.0" layoutY="296.0" text="Gimimo data" />
+      <Separator layoutX="8.0" layoutY="97.0" prefHeight="0.0" prefWidth="372.0" />
+      <Button layoutX="99.0" layoutY="359.0" mnemonicParsing="false" onAction="#AddNew" text="Pridėti naują" />
+      <Button layoutX="208.0" layoutY="359.0" mnemonicParsing="false" onAction="#update" text="Redaguoti " />
+      <Button fx:id="delete" layoutX="299.0" layoutY="359.0" mnemonicParsing="false" onAction="#deleteRegistruota" text="Ištrinti" />
+      <Separator layoutX="8.0" layoutY="398.0" prefHeight="0.0" prefWidth="372.0" />
+      <Button fx:id="issiregistr" layoutX="375.0" layoutY="484.0" mnemonicParsing="false" onAction="#out" text="Išsiregistruoti" />
+      <Button fx:id="grizt" layoutX="282.0" layoutY="484.0" mnemonicParsing="false" onAction="#backtomenu" prefHeight="27.0" prefWidth="71.0" text="Grįžti" />
+      <Button layoutX="25.0" layoutY="359.0" mnemonicParsing="false" onAction="#clear" text="Išvalyti" />
+   </children>
+</Pane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Registruotas.User">
+   <children>
+      <Label fx:id="registruotas" layoutX="284.0" layoutY="32.0" prefHeight="27.0" prefWidth="214.0" text="vardas" />
+      <Button fx:id="signout" layoutX="308.0" layoutY="588.0" mnemonicParsing="false" onAction="#signout" text="Išsiregistruoti" />
+      <Label layoutX="174.0" layoutY="37.0" prefHeight="17.0" prefWidth="116.0" text="Sveiki, prisijunge" textAlignment="CENTER" />
+      <Label fx:id="pasvord" layoutX="24.0" layoutY="85.0" text="Informacija:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <ImageView fx:id="pav" fitHeight="95.0" fitWidth="116.0" layoutX="95.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="527.0" layoutY="24.0" mnemonicParsing="false" onAction="#ToTheMain" text="Eiti į pagrindinį puslapį" />
+      <Label fx:id="pasas" layoutX="128.0" layoutY="441.0" text="Slapt" />
+      <Label layoutX="20.0" layoutY="410.0" text="Pavardė" />
+      <Label layoutX="19.0" layoutY="339.0" text="Vartotojo vardas" />
+      <Label layoutX="24.0" layoutY="370.0" text="Vardas" />
+      <Label layoutX="19.0" layoutY="441.0" text="Slaptažodis" />
+      <Label layoutX="24.0" layoutY="478.0" prefHeight="17.0" prefWidth="85.0" text="Gimimo data" />
+      <TextField fx:id="redVardas" layoutX="129.0" layoutY="365.0" prefHeight="27.0" prefWidth="175.0" />
+      <TextField fx:id="redPavard" layoutX="129.0" layoutY="405.0" prefHeight="27.0" prefWidth="175.0" />
+      <TextField fx:id="redMetai" layoutX="128.0" layoutY="473.0" prefHeight="27.0" prefWidth="50.0" />
+      <TextField fx:id="redMen" layoutX="192.0" layoutY="473.0" prefHeight="27.0" prefWidth="50.0" />
+      <TextField fx:id="redDien" layoutX="255.0" layoutY="473.0" prefHeight="27.0" prefWidth="50.0" />
+      <Button fx:id="redaguoti" layoutX="54.0" layoutY="519.0" mnemonicParsing="false" onAction="#redguotiuser" prefHeight="27.0" prefWidth="110.0" text="Išsaugoti" />
+      <Button layoutX="185.0" layoutY="519.0" mnemonicParsing="false" onAction="#keistslapt" prefHeight="27.0" prefWidth="126.0" text="Keisti slaptažodį" />
+      <Label fx:id="redNikas" layoutX="141.0" layoutY="339.0" text="Vvard" />
+      <Button layoutX="266.0" layoutY="436.0" mnemonicParsing="false" onAction="#refr" prefHeight="27.0" prefWidth="36.0" text="-&gt;" />
+      <Button layoutX="163.0" layoutY="281.0" mnemonicParsing="false" onAction="#pridetift" text="Pridėti" />
+      <TextField fx:id="namefile" layoutX="70.0" layoutY="248.0" />
+      <Separator layoutX="-4.0" layoutY="559.0" prefHeight="3.0" prefWidth="726.0" />
+      <TableView fx:id="NoraiTable" layoutX="449.0" layoutY="87.0" prefHeight="183.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="NoraiPrekes" prefWidth="199.0" text="Patinkančios prekės" />
+        </columns>
+      </TableView>
+      <Button layoutX="510.0" layoutY="275.0" mnemonicParsing="false" onAction="#DeleteFromNorai" text="Panaikinti" />
+      <Separator layoutX="370.0" layoutY="69.0" orientation="VERTICAL" prefHeight="488.0" prefWidth="4.0" />
+      <Label fx:id="txtNorai" disable="true" layoutX="593.0" layoutY="280.0" prefHeight="17.0" prefWidth="31.0" textAlignment="CENTER" />
+      <Button layoutX="83.0" layoutY="281.0" mnemonicParsing="false" onAction="#issaugoti" text="Išsaugoti" />
+      <TableView fx:id="uzsaktable" layoutX="381.0" layoutY="358.0" prefHeight="193.0" prefWidth="328.0">
+        <columns>
+          <TableColumn fx:id="nr" prefWidth="39.0" text="Nr." />
+          <TableColumn fx:id="vnt" prefWidth="39.0" text="vnt." />
+            <TableColumn fx:id="kain" prefWidth="109.0" text="Kaina" />
+            <TableColumn fx:id="dat" prefWidth="146.0" text="Data" />
+        </columns>
+      </TableView>
+      <Separator layoutX="372.0" layoutY="318.0" prefHeight="3.0" prefWidth="345.0" />
+      <Label layoutX="470.0" layoutY="331.0" text="Užsakymų Informacija" />
+   </children>
+</Pane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pagrindinis.PagrindinisControl">
+   <children>
+      <Label layoutX="14.0" layoutY="31.0" text="Sveiki, atvykę į elektroninę parduotuvę" />
+      <Separator layoutX="240.0" layoutY="75.0" orientation="VERTICAL" prefHeight="246.0" prefWidth="0.0" />
+      <Separator layoutX="8.0" layoutY="329.0" prefHeight="4.0" prefWidth="703.0" />
+      <Label fx:id="lPav" layoutX="253.0" layoutY="95.0" prefHeight="29.0" prefWidth="150.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="lApras" contentDisplay="CENTER" layoutX="255.0" layoutY="131.0" prefHeight="85.0" prefWidth="150.0" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ImageView fx:id="paveiksl" fitHeight="158.0" fitWidth="142.0" layoutX="438.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lKaina" alignment="CENTER" layoutX="321.0" layoutY="227.0" prefHeight="28.0" prefWidth="41.0" textAlignment="CENTER" textFill="#0ca80c">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <Button layoutX="255.0" layoutY="285.0" mnemonicParsing="false" onAction="#PridetiKrepsel" text="Į krepšelį" textFill="#0e940e" />
+      <Button layoutX="360.0" layoutY="285.0" mnemonicParsing="false" onAction="#PridetiNora" opacity="0.65" text="Patinka" textFill="#e11313" />
+      <Button layoutX="483.0" layoutY="26.0" mnemonicParsing="false" onAction="#backlog" text="Grįžti į profilį" />
+      <TableView fx:id="table" layoutX="16.0" layoutY="66.0" prefHeight="259.0" prefWidth="216.0">
+        <columns>
+          <TableColumn fx:id="prekes" prefWidth="215.0" text="Prekės" />
+        </columns>
+      </TableView>
+      <Label fx:id="eur" layoutX="362.0" layoutY="229.0" prefHeight="23.0" prefWidth="33.0" textFill="#0ca80c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" layoutX="254.0" layoutY="232.0" prefHeight="22.0" prefWidth="54.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="KomNaujas" layoutX="25.0" layoutY="420.0" prefHeight="94.0" prefWidth="557.0" />
+      <Label fx:id="vardasUser1" layoutX="80.0" layoutY="373.0" text="Anonimas" textFill="#0f0aa1" />
+      <Label layoutX="25.0" layoutY="395.0" text="Prekė:" />
+      <Label fx:id="vardasUser" layoutX="255.0" layoutY="31.0" text="Label" textFill="#100ba1" />
+      <Label fx:id="komPavad" layoutX="67.0" layoutY="395.0" text="Prekė nepasirinkta" />
+      <Label layoutX="25.0" layoutY="373.0" text="Vardas:" />
+      <Label layoutX="25.0" layoutY="350.0" text="Dabartinė data:" />
+      <Button layoutX="260.0" layoutY="588.0" mnemonicParsing="false" onAction="#logout" text="Išsiregistruoti" />
+      <Button layoutX="439.0" layoutY="285.0" mnemonicParsing="false" onAction="#komentarai" text="Komentarai" />
+      <Button layoutX="246.0" layoutY="536.0" mnemonicParsing="false" onAction="#AddNewKoment" text="Palikti atsiliepimą" />
+      <Label fx:id="dateDabar" layoutX="124.0" layoutY="350.0" text="Label" />
+      <Button layoutX="341.0" layoutY="26.0" mnemonicParsing="false" onAction="#ZiuretiKrepsel" text="Peržiūrėti krepšelį" textFill="#0e940e" />
+   </children>
+</Pane>
